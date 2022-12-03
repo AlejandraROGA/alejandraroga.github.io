@@ -1,0 +1,890 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* CSS Document */
+/* carrusel*/
+
+*{
+
+	margin: 0;
+   
+	padding: 0;
+}
+/*              */
+
+
+
+
+
+
+/*         */
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    /*
+  overflow: hidden;
+  dsisplay:inline;
+    */
+  background-color: #542962;
+font-family: 'Montserrat Alternates', sans-serif;
+}
+ul a{
+    color:black;
+    font-family: 'Concert One', cursive;
+    
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:black;
+  font-family: 'Concert One', cursive;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #542962;
+}
+
+.active {
+  background-color: #948198;
+}
+
+/*   Inicio */
+
+#SecP{
+    padding-top: 100px;
+	padding-bottom: 100px;
+	background-image:url("img/ind11.png");
+	min-height: 600px;
+}
+
+#SecP h1{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    font-size: 100px;
+    color: #5E2F64;
+    
+}
+
+#SecP p{
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 70px;
+}
+/*PantallaDividida*/
+
+.derecha{
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+   /* padding-top: 150px; */
+}
+
+.derecha h1{
+font-size: 50px;
+  text-align:center;
+    padding-top: 3%;
+    font-family: 'Concert One', cursive;
+    color: #5E2F64;
+   
+}
+.derecha p{
+    
+    text-align: center;
+      font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    
+}
+
+/*...*/
+.text-box {
+    
+}
+
+.btn:link,
+.btn:visited {
+    text-transform:uppercase;   /*uppercase*/
+    text-decoration:underline;
+    padding: 15px 15px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #B7A2FF;
+    color: #000000;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*...*/
+/*#btnnp{
+    background-color:rgba(163,75,99,1.00);
+    color: white;
+    
+   
+}
+*/
+
+.izquierda{
+    background: url('img/yoplas.png');
+    background-size: cover;
+    background-position: center;
+   
+    width: 50%;
+    height: 100vh;
+}
+#pantalladiv{
+    display: flex;
+}
+   
+.rb {
+    
+	background-color:#9C8AC5;
+	color:  aliceblue;
+	
+	padding-bottom: 10px;
+    font-family: 'Concert One', cursive;
+}
+.rb p{
+    text-align:center ;
+    font-size: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/*Acaba PantallaDividdida*/
+.rb22 {
+    
+	background-color:#9C8AC5;
+	color:  aliceblue;
+	
+	padding-bottom: 10px;
+    font-family: 'Concert One', cursive;
+}
+.rb22 p{
+    text-align:center ;
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/*Efecto Hover*/
+#SeccionTercerB{
+    
+     text-align: center;
+    background-color: white;  
+	padding-top: 70px;
+	padding-bottom: 70px;
+	padding-left: 20%;
+	padding-right: 20%;
+	color: aliceblue;
+    
+    
+}
+
+#btn0{
+    background-color:slategray;
+    color: white;
+   
+}
+
+#btn0f{
+    background-color:slategray;
+    color: white;
+    
+}
+#btn0g{
+    background-color:slategray;
+    color: white;
+    
+}
+
+#SeccionTercerB h1{
+    
+    font-size: 100px;
+    
+    text-align: center;
+    
+     font-family: 'Concert One', cursive;
+    color: #5E2F64;
+  
+}
+
+
+#SeccionTercerB p{
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    
+}
+#SeccionTercerB img{
+    padding-top: 50%;
+}
+.container{
+    background-color: #BBBBDF;
+}
+
+
+/*Carouselfull*/
+
+
+/*Termina Efecto hover*/
+footer{
+	/*text-align:center ;
+	background-color:#936b69;
+	color:  aliceblue;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    font-family: 'Concert One', cursive;
+	*/
+   /* position: absolute;*/
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color:#936b69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	
+}
+.logo
+{
+    height: 80px;
+    margin-bottom: 1rem;
+    
+}
+.social-icons-container, .footer-menu-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url("img/1.png");
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover{
+    background-color:#121212;
+    filter:invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url("img/corazon.png");  
+}
+.social-icon:nth-of-type(3){
+    background-image: url("img/INSTAGRAMMM.png");
+}
+.social-icon:nth-of-type(4){
+    background-image: url("img/FACEEBOOK.png");
+}
+.footer-menu-containerR{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+.menu-items{
+margin: 1rem 1.5rem;
+cursor: pointer;
+    opacity: 0.6;
+}
+.menu-items:hover{
+    opacity: 1;
+    
+}
+.copyright{
+    color: white;
+    opacity:none;
+    text-align: center;
+}
+/*Galeria */
+
+
+
+.lightbox-container, .lightbox-btn, .lightbox-image-wrapper, .lightbox-image{transition:all .4s ease-in-out;}
+.lightbox-enabled {padding-top:100%;
+cursor:pointer;
+background-size:cover;
+background-position:center;}
+
+.lightbox-container {width:100vw;
+height:100vh;
+position:fixed;
+top:0;
+left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+background-color:rgba(0,0,0,.6);
+z-index:9999;
+opacity:0;
+pointer-events:none;
+}
+
+.lightbox-container.active {
+  opacity:1;
+  pointer-events:all;
+}
+.lightbox-image-wrapper {
+  display:flex;
+  transform:scale(0);
+  align-items:center;
+  justify-content:center;
+  max-width:90vw;
+  max-height:90vh;
+  position:relative;
+}
+.lightbox-container.active .lightbox-image-wrapper {transform:scale(1);}
+.lightbox-btn, #close {
+  color:white;
+  z-index:9999999;
+ cursor:pointer; 
+  position:absolute;
+  font-family: 'Material Icons'!important;
+  font-size:50px;
+}
+
+.lightbox-btn:focus {
+  outline:none;
+}
+
+.left {left:50px;}
+.right {right:50px;}
+#close {top:50px;
+right:50px;}
+
+.lightbox-image {
+  width:100%;
+  -webkit-box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.19); 
+box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.19);
+  max-height:95vh;
+  object-fit:cover;
+ }
+
+@keyframes slideleft {
+  33% {transform:translateX(-300px);
+  opacity:0;
+  }
+  66% {transform:translateX(300px);
+  opacity:0;
+  }
+}
+
+
+.slideleft {
+   animation-name: slideleft;
+ animation-duration: .5s; 
+ animation-timing-function: ease; 
+}
+@keyframes slideright {
+  33% {transform:translateX(300px);
+  opacity:0;}
+  66% {transform:translateX(-300px);
+  opacity:0;}
+}
+
+
+.slideright{
+   animation-name: slideright;
+ animation-duration: .5s; 
+ animation-timing-function: ease; 
+}
+
+
+
+#PrimeraSeccionGal{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image:url("img/gondo3.png");
+	min-height: 600px;
+}
+#PrimeraSeccionGal h1{
+    font-size: 90px;
+    text-align:center;
+    margin-left: 50px;
+    font-family: 'Concert One', cursive;
+	color:#000000;
+	
+}
+#PrimeraSeccionGal p{
+    font-size: 35px;
+    text-align:center;
+  
+}
+
+/*MiHistoria*/
+#TerceraSeccionM
+{
+	text-align: center;
+	background-color: #C7B2B1;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 80%;
+	padding-right: 80%;
+	color: aliceblue;
+    
+}
+
+#TerceraSeccionM h1{
+    font-size: 20px;
+    color:rgba(21,13,31,1.00);
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#secMEone{
+   
+    background-image: url("img/talvosss.png");
+  padding-bottom: 15%;
+}
+#t{
+    text-align: center;
+	padding-top: 3%;
+	width: 100%;
+    height: 100%;
+    
+	
+	color: #5E2F64;
+}
+
+#t h1{
+  
+    font-size: 90px;
+    font-family: 'Concert One', cursive;
+}
+
+body p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#btnn{
+    
+    background-color:#232556;
+    color: white;
+    
+   
+}
+
+
+.roww p{
+    color: black;
+    
+}
+
+ label{
+    
+    padding-right: 10px;
+    font-size: 1rem;
+
+}
+
+
+/*Video*/
+.VideoOne{
+    background-color: #B9B9DC;
+}
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+    font:10.5em'Montserrat';
+    
+}
+
+.text-copy {
+    fill:  none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/*Video Patalla dividida*/
+#B p{
+    font-size: 40px;
+    color:black;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif; 
+}
+.derechaDos{
+    background-color: #B9B9DC;
+    height: 100vh;
+    width: 50%;
+   /* padding-top: 150px; */
+}
+
+
+.izquierdaDos{
+    
+    
+   
+    
+    width: 50%;
+    height: 100vh;
+}
+#pantalladivDos{
+    display: flex;
+    
+}
+
+/* Habilidades*/
+
+
+
+.containerF {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {width: 90%; background-color: #FECFBB;}
+.css {width: 80%; background-color: #D886A4;}
+.js {width: 65%; background-color: #7897AB;}
+.php {width: 60%; background-color: #655E8A;}
+
+#Habilidades h1{
+    font-size: 100px;
+    
+    text-align: center;
+   background-image: url("img/talvosss.png");
+     font-family: 'Concert One', cursive;
+    color: #5E2F64;
+  
+}
+#Habilidades{
+    background-color: white;
+  
+}
+/*...*/
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Galery{
+    background-image: linear-gradient(45deg, #ECE3FF, #CCCDFF,#B1C4FF,#8A80FE,#9D8AF1);
+   
+    background-size: 100%;
+    animation:  cambiar 10s ease infinite;
+}
+@keyframes cambiar{
+    0%{background-position:  0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+#SegundaSeccionAA{
+    text-align: center;
+    
+}
+#creacion{
+    background-color: #CCCDFF;
+   
+}
+#creacion p{
+    text-align: center;
+    font-size: 50px; 
+}
+/*PROYECTOOOOOOO*/
+
+
+
+#SecBC h1{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    font-size: 100px;
+    padding-top: 5%;
+    color: #5E2F64;
+    
+}
+
+#SecPP p{
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+}
+
+/* */
+#SeccionTercerBB{
+    
+    background-image:url('img/HIGFONT.png');
+    padding-bottom: 30%;
+    height:100%;
+
+    border: none;
+    /**/
+     text-align: center;
+    background-color: white;  
+	
+	color: black;
+    
+    
+}
+#SeccionTercerBB p{
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+#SeccionTercerBB h1{
+    text-align: center;
+    background-image:url('img/font.png');
+    font-family: 'Concert One', cursive;
+    font-size: 60px;
+ color: #5E2F64;
+}
+/*...*/
+
+/*FIN PROYECTOS*/
+
+/*Comunicacion*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerC {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.rowC:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#COM {
+  
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    font-size: 100px;
+ 
+    color: #5E2F64;
+    
+
+}
+#COMM {
+    color: black;
+    font-size: 60px;
+     font-family: 'Montserrat Alternates', sans-serif;
+}
+/*fincomunicacion*/
+/*galeriaPR*/
+
+/* The grid: Four equal columns that floats next to each other */
+.columnZ {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.columnZ img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.columnZ img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.rowPj:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.containerPL {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+/*....*/
+/*footer*/
+
+
